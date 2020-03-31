@@ -36,7 +36,7 @@ extern AddressLookupTable<void> ProxyAddressLookupTable;
 
 #include <Xinput.h>
 
-//#define VERBOSE
+#define VERBOSE
 
 struct HookedPad
 {

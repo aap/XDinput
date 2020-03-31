@@ -22,8 +22,8 @@ The verbose dll will print some stuff that might be helpful if things don't work
 
 # How to get Scarface to load this
 
-The game will *not* load a custom dinput8.dll by itself because it uses
-CoCreateInstance, which uses the class registry and loads dinput8.dll from system32.
-To make it load a custom dinput8.dll you need to do some hackery:
-Get [this](bin/scarface_dinput.zip) and make the game load it,
-then it should work.
+First of all, install [SilentPatch](https://github.com/CookiePLMonster/SilentPatchScarface).
+It comes with the ultimate asi loader, which allows the game to load dinput8.dll from the game directory
+(Normally it doesn't do this because it uses CoCreateInstance, which uses the class registry and loads dinput8.dll from system32).
+Then simply put dinput8.dll into the game directory and TURN OFF vibration, it crashes the game for some reason
+(and xdinput doesn't support it anyway).
